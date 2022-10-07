@@ -1,0 +1,30 @@
+name: New Subtheme
+type: theme
+description: 'A very user friendly theme.'
+alt text: 'Screenshot of Olivero Subtheme, Drupal front-end theme.'
+package: Other
+core_version_requirement: ^9.2 || ^10
+libraries:
+  - new_subtheme/global-styling
+base theme: classy
+regions:
+  branding: Branding
+  navigation: Main navigation  
+  header: 'Header'
+  search: Search
+  featured: Featured
+  primary_menu: 'Primary menu'                
+  secondary_menu: 'Secondary menu'         
+  highlighted: 'Highlighted' 
+  help: 'Help'                                
+  breadcrumb: 'Breadcrumb'                               
+  local_tasks: 'Local Tasks' 
+  content: Content
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  footer_first: Footer First
+  footer_second: Footer Second
+  footer_third: Footer Third
+  footer_bottom: Footer Bottom 
+  page_top: Page top
+  page_bottom: Page bottom

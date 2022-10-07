@@ -1,0 +1,42 @@
+<header aria-label="Site header" class="header" id="header" role="banner">
+     {{ page.header }} 
+     {{ page.secondary_menu }} 
+          
+</header>
+<header aria-label="Site header" class="header" id="header" role="banner">
+     {{ page.branding }}
+     {{ page.navigation }}
+     {{ page.search }}       
+</header>
+
+<section class="primary_menu" id="primary_menu" role="complementary">
+    {{ page.primary_menu }}
+     
+</section>
+<section class="featured" id="featured" role="complementary">       
+    {{ page.breadcrumb }}
+     {{ page.featured }}
+     {{ page.highlighted }}
+      
+</section>
+<section class="main" id="main">   
+   <aside class="right--sidebar" id="sidebar" role="complementary">
+     {{ page.sidebar_first }}
+   </aside>
+   <main aria-label="Site main content" class="content" id="content" role="main">
+          {{ page.content }}
+   </main>
+   <aside class="left--sidebar" id="sidebar" role="complementary">
+     {{ page.sidebar_second }}
+   </aside>
+</section>
+<footer aria-label="Site footer" class="footer" id="footer" role="contentinfo">
+   <div class="footer--top">
+     {{ page.footer_first }}
+     {{ page.footer_second }}
+     {{ page.footer_third }}
+   </div>
+   <div class="footer--bottom">
+       {{ page.footer_bottom }}
+   </div>
+</footer>

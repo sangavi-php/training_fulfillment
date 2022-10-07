@@ -1,0 +1,122 @@
+{#
+/**
+ * @file
+ * Default theme implementation to present all user data.
+ *
+ * This template is used when viewing a registered user's page,
+ * e.g., example.com/user/123. 123 being the user's ID.
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ *   print a subset such as 'content.field_example'. Fields attached to a user
+ *   such as 'user_picture' are available as 'content.user_picture'.
+ * - attributes: HTML attributes for the container element.
+ * - user: A Drupal User entity.
+ *
+ * @see template_preprocess_user()
+ *
+ * @ingroup themeable
+ */
+#}
+<article{{ attributes }}>
+  {% if content %}
+    <table class="table" id="table">
+    <tr>
+        <td>{{ content.field_global_employee_id }}</td>
+        <td>{{ content.field_emp_id }}</td>
+    </tr> 
+    <tr>   
+         <td>{{ content.field_emp_name }}</td>
+        <td>{{ content.field_emp_username }}</td>
+    </tr>
+    <tr>
+        <td>{{ content.field_email_id }}</td>
+        <td>{{ content.field_grade }}</td>
+    </tr> 
+    <tr>   
+         <td>{{ content.field_final_grade }}</td>        
+        <td>{{ content.field_location }}</td>
+    </tr>
+    <tr>
+        <td>{{ content.field_sub_location }}</td>
+        <td>{{ content.field_fresher }}</td> 
+    </tr> 
+    <tr>   
+          <td>{{ content.field_hire_date }}</td>
+        <td>{{ content.field_icx }}</td>
+    </tr>
+    <tr>
+         <td>{{ content.field_domain }}</td>
+        <td>{{ content.field_service_line }}</td>
+    </tr> 
+    <tr>   
+           <td>{{ content.field_primary_skill }}</td>
+        <td>{{ content.field_secondary_skill }}</td>
+    </tr>
+    <tr>
+        <td>{{ content.field_supervisor_name }}</td>
+        <td>{{ content.field_pid }}</td>
+    </tr> 
+    <tr>   
+         <td>{{ content.field_project_name }}</td>
+        <td>{{ content.field_project_manager }}</td>
+    </tr>
+    <tr>
+         <td>{{ content.field_account }}</td>    
+        <td>{{ content.field_allocation_start_date }}</td> 
+    </tr> 
+    <tr>   
+         <td>{{ content.field_allocation_end_date }}</td>
+        <td>{{ content.field_resource_current_status }}</td>
+    </tr>
+    <tr>  
+        <td>{{ content.field_hc }}</td>
+        <td>{{ content.field_delivery_bu }}</td>
+    </tr>
+    <tr>
+    <td>{{ content.field_delivery_region }}</td>
+        <td>{{ content.field_sector_country }}</td>
+  </tr>
+  <tr>
+      <td>{{ content.field_age }}</td>
+        <td>{{ content.field_age_bucket }}</td>      
+  </tr>  
+  <tr>
+    <td>{{ content.field_ou_code }}</td>
+        <td>{{ content.field_employee_type }}</td>
+  </tr>
+  <tr>
+    <td>{{ content.field_captives_p_c }}</td>
+        <td>{{ content.field_project_type }}</td>
+  </tr>
+  <tr>
+    <td>{{ content.field_resource_type }}</td>
+        <td>{{ content.field_training_days_cal_days_ }}</td>    
+  </tr>  
+  <tr>
+    <td>{{ content.field_shadow_day_cal_days_ }}</td>
+        <td>{{ content.field_billing_days_cal_days_ }}</td>
+  </tr>
+  <tr>
+     <td>{{ content.field_account_availability }}</td>
+        <td>{{ content.field_non_deployable }}</td>
+  </tr>
+  <tr>
+    <td>{{ content.field_proposed_so_numbers }}</td>
+        <td>{{ content.field_proposed_accounts }}</td>     
+  </tr>  
+  <tr>
+    <td>{{ content.field_proposed_dates }}</td>
+        <td>{{ content.field_last_cv_updated }}</td>
+  </tr>
+  <tr>
+    <td>{{ content.field_sez_non_sez }}</td>
+        <td>{{ content.field_generic_skill }}</td>
+  </tr>
+    <tr>
+        <td>{{ content.field_icx }}</td>
+        <td>{{ content.field_supply_type }}</td>
+    </tr>  
+    </table>     
+  {% endif %}
+</article>

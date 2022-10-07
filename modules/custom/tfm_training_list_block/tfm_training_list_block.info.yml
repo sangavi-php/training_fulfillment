@@ -1,0 +1,8 @@
+name: TFM  Training List Block
+description: This is Training List Block module
+core_version_requirement : ^8 || ^9
+version: 1.X
+type: module
+package: Custom
+dependencies:
+  - block

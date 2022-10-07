@@ -1,0 +1,12 @@
+<?php
+
+use Drupal\views\ViewExecutable;
+/**
+ * Implements views_pre_render().
+ */
+
+function tfm_skillmenu_views_pre_render(ViewExecutable $view) {
+  if ($view->id() == 'adobe') {
+    $view->setTitle('{{field_primary_skill}}');
+  }
+}

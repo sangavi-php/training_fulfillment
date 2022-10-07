@@ -1,0 +1,8 @@
+name: TFM Skill Menu
+description:  This is Skill Menus Block module
+core_version_requirement : ^8 || ^9
+version: 1.X
+type: module
+package: Custom
+dependencies:
+  - block

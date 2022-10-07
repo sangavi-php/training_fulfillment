@@ -1,0 +1,29 @@
+name: Olivero Subtheme
+type: theme
+base theme: olivero
+description: 'An extension with basic overrides to Olivero: a clean, accessible, and flexible Drupal front-end theme.'
+alt text: 'Screenshot of Olivero Subtheme, Drupal front-end theme.'
+package: Core
+core_version_requirement: ^9.2 || ^10
+libraries:
+  - subtheme_olivero/global-styling
+regions:
+  header: Header
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  hero: 'Hero'
+  highlighted: Highlighted
+  breadcrumb: Breadcrumb
+  social: Social Bar
+  content_above: Content Above
+  content: Content
+  sidebar: 'Sidebar'  
+  featured_top: 'Featured top'
+  content_below: 'Content Below'
+  footer_top: 'Footer Top'
+  footer_bottom: 'Footer Bottom' 
+ 
+ 
+   
+  
+  
